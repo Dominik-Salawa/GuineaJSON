@@ -2,7 +2,7 @@ from . import ver
 import sys
 
 def main():
-    valid_args = {"--version": 1, "--license": 5, "--model": 3, "--version+model": 4, "--full-version": 0}
+    valid_args = {"--full-version": 0, "--version": 1, "--patch-version": 2, "--model": 4, "--version+model": 5, "--license": 6}
 
     if len(sys.argv) == 1: print(("-" * len(f"GuineaJSON {ver()}")) + f"\nGuineaJSON {ver()}\n" + f"{'| GitHub: Dominik-Salawa |':^{len(f"GuineaJSON {ver()}")}}\n" + ("-" * len(f"GuineaJSON {ver()}")))
     else:

@@ -52,5 +52,5 @@ for i in range(20000):
     array.append({"name": (fn + " " + ln), "age": age, "id": id})
     print((fn + " " + ln), age, id)
 
-G.save(array, addr, overwrite=True, throws_errors=True, space_count=10, dont_save_if_malformed_JSON=True)
+G.save(array, addr, overwrite=True, throws_errors=True, indent=2, dont_save_if_malformed_JSON=True)
 print("Done")
